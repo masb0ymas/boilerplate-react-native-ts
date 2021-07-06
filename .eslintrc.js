@@ -55,5 +55,19 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-fragments': [2, 'element'],
     'jsx-a11y/anchor-is-valid': 'off',
+    'import/no-unresolved': [
+      2,
+      {
+        ignore: [
+          'assets',
+          'components',
+          'config',
+          'constants',
+          'navigations',
+          'screens',
+          'utils',
+        ],
+      },
+    ],
   },
 }

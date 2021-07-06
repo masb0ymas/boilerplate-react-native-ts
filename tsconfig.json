@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "baseUrl": "./src",
@@ -15,10 +14,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "paths": {
+      "assets": ["./src/assets/*"],
+      "components": ["./src/components/*"],
+      "config": ["./src/config/*"],
+      "constants": ["./src/constants/*"],
+      "navigations": ["./src/navigations/*"],
+      "screens": ["./src/screens/*"],
+      "utils": ["./src/utils/*"],
+    }
   },
   "exclude": [
-    "node_modules", "babel.config.js", "metro.config.js", "jest.config.js"
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
   ],
   "include": [
     "**/*.ts",
